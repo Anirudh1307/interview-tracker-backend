@@ -1,42 +1,36 @@
+# Build artifacts
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
+# IDE
+.idea/
+.vscode/
 *.iws
 *.iml
 *.ipr
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-### Environment ###
+# Environment & Secrets
 .env
 .env.local
+.env.production
 application-local.properties
 
-### Database ###
+# Database
 data/
 *.db
 *.mv.db
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
